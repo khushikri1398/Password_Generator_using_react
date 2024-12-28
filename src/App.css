@@ -1,38 +1,137 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:antiquewhite;
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.passwordBox {
+  width: 400px;
+  padding: 20px;
+  background-color: aquamarine;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.passwordBox h2 {
+  margin-bottom: 20px;
+  color: #333333;
+  font-size: 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.passwordBoxin {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 20px;
+  gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.passwordBoxin input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.passwordBoxin input::placeholder {
+  color: #aaaaaa;
+}
+
+.passwordBoxin button {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.passwordBoxin button:hover {
+  background-color: #45a049;
+}
+
+.passwordBoxin button:active {
+  transform: scale(0.95);
+}
+
+.passLength {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.passLength label {
+  flex: 1;
+  font-size: 16px;
+  text-align: left;
+  color: #555555;
+}
+
+.passLength input[type="number"] {
+  width: 80px;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.passOptions {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.passOptions label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #555555;
+}
+
+.passOptions input {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.generateButton {
+  padding: 12px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.generateButton:hover {
+  background-color: #0056b3;
+}
+
+.generateButton:active {
+  transform: scale(0.95);
 }
